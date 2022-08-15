@@ -1,5 +1,5 @@
 
-/* Load font */
+/* Load fonts */
 @font-face {
     
     src: url(./Fonts/Akira\ Expanded\ Demo.otf) format('truetype');
@@ -7,17 +7,78 @@
     font-weight: normal;
     font-style: normal;
 }
-/* apply font */
-h1 {
-font-family:"akira", sans-serif;
-text-decoration: none; /* remove line due to link */
-color: inherit; /* blue colors for links too */
-text-decoration: inherit; /* no underline */
 
+@font-face {
+    
+    src: url(./Fonts/cine/Cinematografica-Regular-trial.ttf) format('truetype');
+    font-family: 'cine';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    
+    src: url(./Fonts/montserrat/Montserrat-Light.otf) format('truetype');
+    font-family: 'montserrat';
+    font-weight: normal;
+    font-style: normal;
 }
 
 img {
-    width: 50px;
-    float: left
-  
+    width: 50px; 
+}
+
+section{
+
+    text-align: justify;
+    font-family: "montserrat";
+}
+.menu { 
+
+    list-style: none; /* remove default style */
+    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 17px;
+    margin-top: 0px;
+
+}
+.main {
+    margin-left: 0%;
+    font-family:"akira", sans-serif;
+    list-style: none; /* remove default style */
+    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
+    font-size: 40px
+    
+}
+
+.language {
+
+    list-style: none; /* remove default style */
+    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    float:right
+    
+    
+}
+li {
+    margin-top: 0%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: white;
+    margin: 0px;
+    
+  }
+
+.anchor{
+
+    align-items: flex-start;
+    margin-top: 0ch;
+    height: 900px;
 }
