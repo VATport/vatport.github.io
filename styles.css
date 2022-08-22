@@ -1,7 +1,6 @@
 
 /* Load fonts */
-@font-face {
-    
+@font-face {  
     src: url(./Fonts/Akira\ Expanded\ Demo.otf) format('truetype');
     font-family: 'akira';
     font-weight: normal;
@@ -9,76 +8,113 @@
 }
 
 @font-face {
-    
     src: url(./Fonts/cine/Cinematografica-Regular-trial.ttf) format('truetype');
     font-family: 'cine';
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    
+@font-face { 
     src: url(./Fonts/montserrat/Montserrat-Light.otf) format('truetype');
     font-family: 'montserrat';
     font-weight: normal;
     font-style: normal;
 }
 
-img {
-    width: 50px; 
+.main {
+    border-style: none;
+    background-color: white;
+    margin-left: 0%;
+    font-family:"akira", sans-serif;
+    font-size: 40px   
 }
+
+.anchor img { /* applies to language class that are images, for some reason img width can only be modified this way */
+    width: 45px;
+    margin-top: 1px;
+}
+
+.anchor {
+    border-style: none;
+    background-color: white;
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    float: left
+    
+}
+
+
+.menu { 
+
+    border-style: none;
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 17px;
+    margin-top: 0px;
+    background-color: white;
+    position: relative; /* always related to an absolute position of a daughter*/
+    background-color: var(--background-color);
+    --background-color: #FFFFFF;
+
+}
+
+.language img { /* applies to language class that are images, for some reason img width can only be modified this way */
+
+    margin-top: 5px;
+    width: 40px;
+
+}
+
+.language {
+
+    border-style: none;
+    background-color: white;
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 17px;
+    margin-top: 0px;
+    float: right
+    
+}
+
+li {
+    margin-top: 0%;
+}
+
+/* freeze navigation panel */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: white;
+    margin: 0px;
+    
+  }
 
 section{
 
     text-align: justify;
     font-family: "montserrat";
 }
-.menu { 
 
-    list-style: none; /* remove default style */
-    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
-    font-family:"cine", sans-serif;
-    font-size: 30px;
-    margin: 17px;
-    margin-top: 0px;
+.hover_animation{
 
+ 
+    position: absolute
 }
-.main {
-    margin-left: 0%;
-    font-family:"akira", sans-serif;
-    list-style: none; /* remove default style */
-    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
-    font-size: 40px
+.hover_animation::before{
+
+    content:'';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: tomato;
     
 }
-
-.language {
-
-    list-style: none; /* remove default style */
-    display: inline-block; /* li elements are displayed as a list by default, this changes to an horizontal display */
-    font-family:"cine", sans-serif;
-    font-size: 30px;
-    float:right
     
     
-}
-li {
-    margin-top: 0%;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: white;
-    margin: 0px;
-    
-  }
-
-.anchor{
-
-    align-items: flex-start;
-    margin-top: 0ch;
-    height: 900px;
-}
