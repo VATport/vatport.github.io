@@ -1,0 +1,137 @@
+
+/* Load fonts */
+@font-face {  
+    src: url(./Fonts/Akira\ Expanded\ Demo.otf) format('truetype');
+    font-family: 'akira';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {  
+    src: url(./Fonts/akira-expanded-bold.ttf) format('truetype');
+    font-family: 'akira-bold';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {  
+    src: url(./Fonts/akira-expanded-outline.ttf) format('truetype');
+    font-family: 'akira-outline';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(./Fonts/cine/Cinematografica-Light-trial.ttf) format('truetype');
+    font-family: 'cine';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { 
+    src: url(./Fonts/montserrat/Montserrat-Light.otf) format('truetype');
+    font-family: 'montserrat';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { 
+    src: url(./Fonts/ubuntufont/Ubuntu-R.ttf) format('truetype');
+    font-family: 'ubuntu';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    border-style: none;
+    background-color: white;
+    margin-left: 0%;
+    font-family:"akira", sans-serif;
+    font-size: 40px   
+}
+
+.anchor img { /* applies to language class that are images, for some reason img width can only be modified this way */
+    width: 45px;
+    margin-top: 1px;
+}
+
+.anchor {
+    border-style: none;
+    background-color: white;
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    float: left   
+}
+
+.menu { 
+
+    border-style: none;
+    font-family:"ubuntu", sans-serif;
+    font-size: 15px;
+    margin: 17px;
+    margin-top: 0px;
+    background-color: white;
+    position: relative; /* always related to an absolute position of a daughter*/
+    background-color: var(--background-color);
+    --background-color: #FFFFFF;
+    
+}
+
+.language img { /* applies to language class that are images, for some reason img width can only be modified this way */
+
+    margin-top: 5px;
+    width: 40px;
+}
+
+.language {
+
+    border-style: none;
+    background-color: white;
+    font-family:"cine", sans-serif;
+    font-size: 30px;
+    margin: 17px;
+    margin-top: 0px;
+    float: right
+}
+
+li {
+    margin-top: 0%;
+}
+
+/* freeze navigation panel */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: white;
+    margin: 0px;
+    
+  }
+
+section{
+
+    text-align: justify;
+    font-family: "montserrat";
+}
+
+.hover_animation{
+
+ 
+    position: absolute
+}
+.hover_animation::before{
+
+    content:'';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: tomato;
+    
+}
+    
+    
